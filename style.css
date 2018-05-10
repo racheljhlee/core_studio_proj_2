@@ -1,0 +1,740 @@
+* {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.full-screen {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+/*-------------INDEX-------------*/
+
+/*--marquee--*/
+
+.marqueeElement {
+    height: 100%;
+    width: 400px;
+    color: white;
+    font-family: 'IBM Plex Mono';
+    font-size: 40px;
+    position: absolute;
+    z-index: 3;
+}
+
+.marqueeElement:hover {
+	filter: blur(5px);
+}
+
+#mholder {
+    height: 100%;
+    width: 500px;
+    border: 1px;
+    position: absolute;
+    left: 6%;
+    overflow: hidden;
+}
+
+.marqueeElement2 {
+    height: 100%;
+    width: 400px;
+    color: white;
+    font-family: 'IBM Plex Mono';
+    font-size: 40px;
+    position: absolute;
+    z-index: 3;
+}
+
+.marqueeElement2:hover {
+	filter: blur(5px);
+}
+
+#mholder2 {
+    height: 100%;
+    width: 500px;
+    border: 1px;
+    position: absolute;
+    left: 25%;
+    overflow: hidden;
+}
+
+.marqueeElement3 {
+    height: 100%;
+    width: 400px;
+    color: white;
+    font-family: 'IBM Plex Mono';
+    font-size: 40px;
+    position: absolute;
+    z-index: 3;
+}
+
+.marqueeElement3:hover {
+	filter: blur(5px);
+}
+
+#mholder3 {
+    height: 100%;
+    width: 500px;
+    border: 1px;
+    position: absolute;
+    left: 48%;
+    overflow: hidden;
+}
+
+.marqueeElement4 {
+    height: 100%;
+    width: 400px;
+    color: white;
+    font-family: 'IBM Plex Mono';
+    font-size: 40px;
+    position: absolute;
+    z-index: 3;
+}
+
+.marqueeElement4:hover {
+	filter: blur(5px);
+}
+
+#mholder4 {
+    height: 100%;
+    width: 500px;
+    border: 1px;
+    position: absolute;
+    left: 68%;
+    overflow: hidden;
+}
+
+.marqueeElement5 {
+    height: 100%;
+    width: 200px;
+    color: white;
+    font-family: 'IBM Plex Mono';
+    font-size: 40px;
+    position: absolute;
+    z-index: 3;
+}
+
+.marqueeElement5:hover {
+	filter: blur(5px);
+}
+
+#mholder5 {
+    height: 100%;
+    width: 100px;
+    border: 1px;
+    position: absolute;
+    left: 90%;
+    overflow: hidden;
+}
+
+/*--strips--*/
+
+.blue-strip {
+	height: 100%;
+	width: 22%;
+	z-index: 2;
+	position: absolute;
+	left: 78%;
+	filter: drop-shadow(4px 4px 20px black);
+}
+
+.orange-strip {
+	height: 100%;
+	width: 20%;
+	z-index: 2;
+	position: absolute;
+	left: 62%;
+	filter: drop-shadow(4px 4px 20px black);
+}
+
+.green-strip {
+	height: 100%;
+	width: 25%;
+	z-index: 2;
+	position: absolute;
+	left: 40%;
+	filter: drop-shadow(4px 4px 20px black);
+}
+
+.purple-strip {
+	height: 100%;
+	width: 25%;
+	z-index: 2;
+	position: absolute;
+	left: 20%;
+	filter: drop-shadow(4px 4px 20px black);
+}
+
+.pink-strip {
+	height: 100%;
+	width: 20%;
+	z-index: 2;
+	position: absolute;
+	left: 2%;
+	filter: drop-shadow(4px 4px 20px black);
+}
+
+/*-------------ONE/VOID-------------*/
+
+.tv-static-1 {
+	width: 60%;
+	height: 60%;
+	position: absolute;
+	left: 24%;
+	top: 0%;
+	z-index: 1
+}
+
+.tv-static-4 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	opacity: 0.2;
+	pointer-events: none;
+ 
+}
+
+.full-screen-filter {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	filter:hue-rotate(270deg);
+	z-index: 2;
+}
+
+.button {
+	border: none;
+	z-index: 4;
+	position: absolute;
+	width: 20%;
+	height: 25%;
+	top: 10%;
+	left: 58%;
+}
+
+/*-------------TWO/TURBO-------------*/
+
+.full-screen-filter2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	filter:invert(100%);
+}
+
+/*.marquee {
+	position: absolute;
+}*/
+
+.marqueeElement6 {
+    height: 100%;
+    width: 100%;
+    color: red;
+    font-family: 'IBM Plex Mono';
+    font-size: 90px;
+    position: absolute;
+    z-index: 3;
+}
+
+.marqueeElement6:hover {
+	color: yellow;
+}
+
+#mholder6 {
+    height: 100%;
+    width: 100%;
+    border: 1px;
+    position: absolute;
+    left: 4%;
+    overflow: hidden;
+} 
+
+.turbo1 {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: slowmove;
+	 animation-duration: 8s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 z-index: 2; 
+	 filter: blur(10px);
+}
+
+@keyframes slowmove {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo1-fast {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: fastmove;
+	 animation-duration: 2s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 z-index: 2;
+	 filter: blur(2px);
+}
+
+@keyframes fastmove {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo2 {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: slowmove-two;
+	 animation-duration: 8s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: 1.5s;
+	 z-index: 2;
+	 filter: blur(10px);
+}
+
+@keyframes slowmove-two {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo2-fast {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: fastmove-two;
+	 animation-duration: 2s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: .5s;
+	 z-index: 2;
+	 filter: blur(2px);
+
+}
+
+@keyframes fastmove-two {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo3 {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: slowmove-three;
+	 animation-duration: 8s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: 3s;
+	 z-index: 2;
+	 filter: blur(10px);
+
+}
+
+@keyframes slowmove-three {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo3-fast {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: fastmove-three;
+	 animation-duration: 2s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: 1.5s;
+	 z-index: 2;
+	 filter: blur(2px);
+}
+
+@keyframes fastmove-three {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo4 {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: slowmove-four;
+	 animation-duration: 9s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: .5s;
+	 z-index: 1;
+	 filter: blur(10px);
+}
+
+@keyframes slowmove-four {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo4-fast {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: fastmove-four;
+	 animation-duration: 3s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: .5s;
+	 z-index: 1;
+	 filter: blur(2px);
+}
+
+@keyframes fastmove-four {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo5 {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: slowmove-five;
+	 animation-duration: 9s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: 3.25s;
+	 z-index: 1;
+	 filter: blur(10px);
+}
+
+@keyframes slowmove-five {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo5-fast {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: fastmove-five;
+	 animation-duration: 3s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: 1s;
+	 z-index: 1;
+	 filter: blur(2px);
+}
+
+@keyframes fastmove-five {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo6 {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: slowmove-six;
+	 animation-duration: 9s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: 4.5s;
+	 z-index: 1;
+	 filter: blur(10px);
+}
+
+@keyframes slowmove-six {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+
+.turbo6-fast {
+	 position: absolute;
+	 top: 0%;
+	 right: -70%;
+	 animation-name: fastmove-six;
+	 animation-duration: 3s;
+	 animation-play-state: running;
+	 animation-iteration-count: infinite;
+	 animation-delay: 1.75s;
+	 z-index: 1;
+	 filter: blur(2px);
+}
+
+@keyframes fastmove-six {
+	from {right: -70%;}
+	to {right: 100%;}
+}
+/*-------------THREE/UNDONE-------------*/
+
+.background-static {
+	position: absolute;
+	top: 1%;
+	width: 100%;
+	height: 95%;
+	z-index: 1;
+}
+
+.empty-building {
+	position: absolute;
+	width: 100%;
+	height: 102%;
+	z-index: 2;
+	filter: hue-rotate(180deg);
+}
+
+.red-building {
+	position: absolute;
+	width: 100%;
+	height: 102%;
+	z-index: 3;
+	opacity: 0;
+	filter: invert(100%);
+
+}
+
+.red-building:active {
+	opacity: 1;
+}
+
+.button-2 {
+	border: none;
+	z-index: 4;
+	position: absolute;
+	width: 30%;
+	height: 20%;
+	top: 5%;
+	left: 0%;
+}
+
+/*-------------FOUR/WARPED-------------*/
+
+.wood {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.red {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	z-index: 2;
+}
+
+.sign {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	opacity: 0;
+}
+
+.sign:active {
+	opacity: 1;
+}
+
+.red-block {
+	width: 100%;
+	height: 50%;
+	background-color: red;
+	border-style: solid;
+	border-color: red;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	z-index: 4;
+	opacity: 0;
+}
+
+.red-block:hover {
+	opacity: 1;
+}
+
+/*-------------FIVE/RAW-------------*/
+
+.background-raw {
+	position: absolute;
+	width: 100%;
+	height: 101%;
+	z-index: 1;
+}
+
+.empty-tags {
+	position: absolute;
+	width: 100%;
+	height: 101%;
+	z-index: 2;
+	filter:invert(100%);
+}
+
+.krudco {
+	z-index: 3;
+	position: absolute;
+	width: 20%;
+	height: 30%;
+	top: 65%;
+	left: 76%;
+	filter:contrast(200%);
+}
+
+.krudco:hover {
+	opacity: 0.5;
+}
+
+.krudco:active {
+	filter: invert(100%);
+	opacity: 1;
+}
+
+.adults {
+	z-index: 3;
+	position: absolute;
+	width: 19%;
+	height: 22%;
+	top: 80%;
+	left: 20%;
+	filter:contrast(200%);
+}
+
+.adults:hover {
+	opacity: 0.5;
+}
+
+.adults:active {
+	filter: invert(100%);
+	opacity: 1;
+}
+
+.cher {
+	z-index: 3;
+	position: absolute;
+	width: 9%;
+	height: 28%;
+	top: 60%;
+	left: 0%;
+	filter:contrast(200%);
+}
+
+.cher:hover {
+	opacity: 0.5;
+}
+
+.cher:active {
+	filter: invert(100%);
+	opacity: 1;
+}
+
+.tag {
+	z-index: 3;
+	position: absolute;
+	width: 11%;
+	height: 17%;
+	top: 51%;
+	left: 26%;
+	filter:contrast(200%);
+}
+
+.tag:hover {
+	opacity: 0.5;
+}
+
+.tag:active {
+	filter: invert(100%);
+	opacity: 1;
+}
+
+.tag-2 {
+	z-index: 3;
+	position: absolute;
+	width: 13%;
+	height: 25%;
+	top: 76%;
+	left: 44%;
+	filter:contrast(200%);
+}
+
+.tag-2:hover {
+	opacity: 0.5;
+}
+
+.tag-2:active {
+	filter: invert(100%);
+	opacity: 1;
+}
+
+.face {
+	z-index: 3;
+	position: absolute;
+	width: 24%;
+	height: 25%;
+	top: 14%;
+	left: 43%;
+	filter:contrast(200%);
+}
+
+.face:hover {
+	opacity: 0.5;
+}
+
+.face:active {
+	filter: invert(100%);
+	opacity: 1;
+}
+
+.rap {
+	z-index: 3;
+	position: absolute;
+	width: 15%;
+	height: 28%;
+	top: 17%;
+	left: 27%;
+	filter:contrast(200%);
+}
+
+.rap:hover {
+	opacity: 0.5;
+}
+
+.rap:active {
+	filter: invert(100%);
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
